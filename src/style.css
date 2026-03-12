@@ -1,0 +1,62 @@
+/* src/style.css - 全局样式和主题变量 */
+
+
+/* 【核心理解】CSS变量 - 定义主题颜色 */
+
+
+/* 亮色主题变量 */
+
+:root {
+    /* 颜色系统 - 统一管理所有颜色 */
+    --primary-color: #2196f3;
+    /* 原：#2196f3 */
+    --primary-hover: #1976d2;
+    /* 🔵 新增：悬停色 */
+    --primary-light: #e3f2fd;
+    /* 原：#e3f2fd */
+    --bg-light: #f8f9fa;
+    /* 原：#e1e1e1 修改为更柔和的灰色 */
+    --bg-white: #ffffff;
+    /* 原：white */
+    --text-primary: #333333;
+    /* 🔵 新增：主要文字色 */
+    --text-muted: #999999;
+    /* 原：#999 */
+    --border-color: #e0e0e0;
+    /* 原：#e0e0e0 */
+    --border-light: #eeeeee;
+    /* 原：#eee */
+    --bg-hover: #f0f0f0;
+    /* 原：#f0f0f0 */
+}
+
+
+/* 【核心理解】暗色主题变量 - 通过data-theme属性触发 */
+
+[data-theme="dark"] {
+    /* 主色调 - 从蓝色调整为更柔和的蓝色 */
+    --primary-color: #64b5f6;
+    /* 原亮色：#2196f3，暗色主题用更亮的蓝色 */
+    --primary-hover: #90caf9;
+    /* 悬停色 - 更浅的蓝色 */
+    --primary-light: #0d47a1;
+    /* 浅蓝色背景 - 在暗色主题中用作较深的蓝色背景 */
+    /* 背景色 - 从浅色调整为深色 */
+    --bg-light: #1a1a1a;
+    /* 主背景 - 深灰近黑色 */
+    --bg-white: #2d2d2d;
+    /* 卡片/内容背景 - 较浅的深灰 */
+    /* 文字色 - 从深色调整为浅色 */
+    --text-primary: #ffffff;
+    /* 主要文字色 - 白色 */
+    --text-muted: #b0b0b0;
+    /* 次要文字色 - 浅灰色 */
+    /* 边框色 - 从浅灰调整为深灰 */
+    --border-color: #444444;
+    /* 常规边框 - 深灰色 */
+    --border-light: #333333;
+    /* 浅边框 - 更深的灰色 */
+    /* 交互色 */
+    --bg-hover: #3a3a3a;
+    /* 悬停背景 - 中等深灰 */
+}
